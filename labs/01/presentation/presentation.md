@@ -1,8 +1,8 @@
 ---
 ## Front matter
 lang: ru-RU
-title: 
-subtitle: 
+title: Лабораторная работа №1
+subtitle: Система контроля версий Git
 author:
   - Аникин Константин Сергеевич
 institute:
