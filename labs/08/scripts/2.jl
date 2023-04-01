@@ -14,11 +14,11 @@ a2 = pcr/(t2^2*ps2^2*N*q)
 b = pcr/(t1^2*ps1^2*t2^2*ps2^2*N*q)
 c1 = (pcr-ps1)/(t1*ps1)
 c2 = (pcr-ps2)/(t2*ps2)
-tspan = (0.0, 30.0)
+tspan = (0.0, 50.0)
 
-function f(du, u,w,t)
+function f(du,u,w,t)
     M1, M2 = u
-    du[1] = M1-b*M1*M2/c1-a1*M1^2/c1
+    du[1] = M1-(0.0015+b/c1)*M1*M2-a1*M1^2/c1
     du[2] = c2*M2/c1-b*M1*M2/c1-a2*M2^2/c1
 end
 
